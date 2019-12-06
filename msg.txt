@@ -1,0 +1,16 @@
+jds282 : CreateRoom?room1
+jds292 : JoinRoom?room1?
+jds282 : Chatting?room1?안녕~₩?
+jds292 : Chatting?room1?안녕?
+jds292 : Chatting?room1?넌 어디사니??
+jds282 : Chatting?room1?난 안양살아 ㅎㅎ?
+jds282 : Chatting?room1?너는???
+jds292 : Chatting?room1?나두 안양살아 ㅎㅎ?
+jds111 : CreateRoom?room1
+jds202 : JoinRoom?room1?
+jds111 : Chatting?room1?안녕?
+jds202 : Chatting?room1?안녕?
+jds202 : Chatting?room1?/Users/jun/eclipse-workspace/Chatting/img/crying.png
+jds111 : Chatting?room1?/Users/jun/eclipse-workspace/Chatting/img/happy.png
+jds292 : CreateRoom?room1
+jds292 : CreateRoom?room1
