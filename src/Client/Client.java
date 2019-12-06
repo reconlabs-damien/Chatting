@@ -291,7 +291,7 @@ public class Client extends JFrame implements ActionListener, KeyListener,ItemLi
 		contentPane.add(button_create_room);
 		Save_File.setBounds(367, 526, 90, 29);
 		contentPane.add(Save_File);
-		Save_File.setVisible(true);
+		Save_File.setVisible(false);
 		
 		list_roomname.setBorder(new LineBorder(new Color(0, 0, 0), 1, true));
 		list_roomname.setFont(new Font("돋움체", Font.PLAIN, 12));
@@ -386,7 +386,7 @@ public class Client extends JFrame implements ActionListener, KeyListener,ItemLi
 		file_Send.setIcon(new ImageIcon("/Users/jun/eclipse-workspace/Chatting/img/file.png"));
 		file_Send.setBounds(321, 571, 27, 29);
 		contentPane.add(file_Send);
-		file_Send.setVisible(true);
+		file_Send.setVisible(false);
 
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon("/Users/jun/eclipse-workspace/Chatting/img/Main.jpg"));
@@ -700,7 +700,10 @@ public class Client extends JFrame implements ActionListener, KeyListener,ItemLi
 			button_login.setEnabled(true);
 			emo_btn.setEnabled(true);
 			emo_btn.setVisible(true);
-
+			Save_File.setVisible(true);
+			Save_File.setEnabled(true);
+			file_Send.setVisible(true);
+			file_Send.setEnabled(true);
 
 		}
 		else if(protocol.equals("CreateRoomFail")){
@@ -731,10 +734,27 @@ public class Client extends JFrame implements ActionListener, KeyListener,ItemLi
 			textField_message.setVisible(true);
 			button_create_room.setEnabled(true);
 			file_Send.setVisible(true);
+			file_Send.setEnabled(true);
 			Save_File.setVisible(true);
+			Save_File.setEnabled(true);
 		}
 		else if(protocol.equals("ExitRoom")){
 			vector_room_list.remove(message);
+			button_send_message.setEnabled(false);
+			button_send_message.setVisible(false);
+			//button_send_file.setEnabled(true);
+			//btn_era.setEnabled(true);
+			button_clear.setEnabled(false);
+			emo_btn.setEnabled(false);
+			emo_btn.setVisible(false);
+			//fontcolor.setEnabled(true);
+			textField_message.setEnabled(false);
+			textField_message.setVisible(false);
+			button_create_room.setEnabled(false);
+			file_Send.setVisible(false);
+			file_Send.setEnabled(false);
+			Save_File.setVisible(false);
+			Save_File.setEnabled(false);
 		}
 		else if(protocol.equals("Chatting")){
 
